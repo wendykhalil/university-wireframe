@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.457), rgba(0, 0, 0, 0.457)), url(eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 9%;
+
+}
+
+nav a img {
+    width: 80px;
+}
+
+.icon-menu {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+ul li::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    display: block;
+    transition: .4s;
+}
+
+ul li:hover::after {
+
+    width: 100%;
+
+}
+
+.content {
+    width: 80%;
+    height: 100vh;
+    padding: 10px 9%;
+
+
+
+}
+
+.content-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.content a {
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.662);
+    padding: 15px 20px;
+    border: 1px solid rgb(212, 15, 15);
+    color: white;
+    font-weight: 700;
+    transition: .4s;
+    border-radius: 9px;
+
+}
+
+.content a:hover {
+    background-color:transparent;
+    transform: scale(1.1);
+}
+
+@media (max-width:769px) {
+
+    nav {
+
+        padding: 10px 5%;
+
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+
+    }
+
+    .content {
+        padding: 10px 5%;
+
+    }
+
+    .content h1 {
+        color: white;
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:618px) {
+
+    nav ul li {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+        font-size: 30px;
+    }
+
+    .content a {
+
+
+        padding: 15px 20px;
+
+
+        font-weight: 500;
+        transition: .4s;
+        border-radius: 9px;
+    }
+}
+
+@media (max-width:812px) {
+
+    ul li {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:426px) {
+    .content {
+        width: 100%;
+        height: 100vh;
+        padding: 1px 1px;
+
+
+
+    }
+
+    .content-text {
+        width: 80%;
+    }
+
+    .content-text h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:420px) {
+
+    .content {
+        width: 100%;
+        height: 100vh;
+        padding: 1px 1px;
+
+
+
+    }
+
+    .content a {
+
+        padding: 10px 12px;
+        font-size: 12px;
+
+
+    }
+}
+
+@media (max-width:1025px) {
+
+    .content-text {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:376px) {
+
+    .content-text {
+        width: 80%;
+    }
+
+    .content-text h1 {
+        font-size: 18px;
+    }
+
+    .content-text p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:320px) {
+
+    .content-text {
+        width: 80%;
+    }
+
+    .content-text h1 {
+        font-size: 14px;
+    }
+
+    .content-text p {
+        font-size: 10px;
+    }
+
+}
+
+
+
+.course {
+    padding: 10px 9%;
+    margin-top: 30px;
+    width: 80%;
+
+}
+
+.text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.text h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.text p {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.box-text {
+    background-color: #fff3f3;
+    padding: 25px;
+    border-radius: 8px;
+    transition: .4S;
+}
+
+.box-text:hover {
+    box-shadow: 2px 2px 20px #eee2e2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.box-text h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.box-text p {
+    color: rgba(0, 0, 0, 0.495);
+    font-size: 14px;
+}
+
+.compus {
+    padding: 10px 9%;
+    margin-top: 30px;
+    width: 80%;
+
+
+}
+
+.row {
+    margin: 100px 0;
+}
+
+.compus-cal {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee2e2;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.compus-cal:hover {
+    box-shadow: 2px 2px 20px #eee2e2;
+    cursor: pointer;
+    transform: scale(1.1);
+
+
+}
+
+.compus-cal img {
+    width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+.service {
+    padding: 10px 9%;
+    margin-top: 30px;
+    width: 80%;
+    text-transform: capitalize;
+
+}
+
+.fac {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.image img {
+    width: 100%;
+    border-radius: 8px;
+
+
+}
+
+.image {
+    border-radius: 8px;
+    position: relative;
+}
+
+.service-text {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+
+}
+
+.fac-content {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eee2e2;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    text-transform: capitalize;
+
+}
+.fac-content:hover{
+    box-shadow: 2px 2px 20px #eee2e2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.fac-content h1{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fac-content p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.564);
+}
+.review{
+    padding: 10px 9%;
+    margin-top: 30px;
+    width: 80%;
+}
+.review-text{
+    margin: 90px 0;
+}
+
+
+.cv{
+    background-color: red;
+    display: flex;
+
+   
+}
+.cta{
+    padding: 10px 9%;
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.548)), url(eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+    text-align: center;
+    padding: 100px 0;
+
+}
+.cta-text .text h1{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+.cta-text .text a{
+    display: inline-block;
+    margin: 20px 0;
+    color: white;
+    border: 1px solid white;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    transition: .4S;
+}
+.cta-text .text a:hover{
+    transform: scale(1.1);
+}
+@media (max-width:410px){
+    .cta-text .text h1{
+        
+        font-size: 20px;
+        
+    
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #eee2e2;
+}
+footer h4{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+footer  p{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.55);
+    margin-bottom: 20px;
+}
+.icons{
+    margin-bottom: 10px;
+}
+.icons i{
+    color: black;
+    margin: 0 13px;
+    font-size: 20px ;
+    transition: .4s;
+}
+.icons i:hover{
+    transform: scale(1.4);
+}
+p i{
+    color: aqua;
+    font-size: 16px;
+}
+footer p i{
+    animation: up 1.5s infinite;
+}
+@keyframes up {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
